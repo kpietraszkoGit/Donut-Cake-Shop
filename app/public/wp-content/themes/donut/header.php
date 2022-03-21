@@ -12,11 +12,15 @@
     <title><?php echo get_bloginfo('name')?></title>
     
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/motel.png">
-    <!-- <link href="<?php echo get_bloginfo('template_directory') ?>style.css"> -->
     <link href="<?php wp_enqueue_style('style.css', get_stylesheet_uri()) ?>">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Font Courgette -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -27,16 +31,11 @@
 
 <body>
     <header class="row">
-        <div class="col-md-4 alert-primary logo">
-            <a href="<?php echo get_bloginfo('wpurl') ?>">LOGO</a>
+        <div class="col-lg-3 img-fluid dcs-logo">
+            <a href="<?php echo get_bloginfo('wpurl') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="Logo"/></a>
         </div>
-        <nav class="col-md-8 alert-success menu">
-            <ul>
-                <li><a>Home</a></li>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <div class="menu-trigger">Menu</div>
+        <nav class="col-lg-9 dcs-menu">
+               <?php wp_nav_menu(['theme_location' => 'main_menu']); ?> 
         </nav> 
     </header>

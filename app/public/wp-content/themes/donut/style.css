@@ -13,8 +13,147 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Donut Cake
 */
-
-.menu {
-    color: red;
-    font-size: 24px;
+* {
+    margin: 0;
+    padding: 0;
 }
+body {
+    background-color: #fffcf9;
+    font-family: 'Courgette', cursive;
+}
+
+/* .dcs-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .menu {
+    list-style-type: none;
+}
+
+.menu a {
+    list-style-type: none;
+    text-decoration: none; 
+    color: rgb(124, 78, 18);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+ul li {
+	display: inline;
+	white-space: nowrap;
+    margin: 0 25px 0 25px;
+}
+
+.menu a:hover {
+	border-bottom: 1px solid rgb(202, 24, 24);
+} */
+
+.menu-trigger {
+    color:#333;
+    background:rgb(151, 106, 47);
+    font-weight:700;
+    font-size: 20px;
+    text-transform:uppercase;
+    padding: 10px 25px;
+    margin:0 0 5px;
+    cursor:pointer;
+    text-shadow: 2px 1px 2px rgba(167, 162, 156, 1);
+}
+
+.menu-trigger:hover {
+    opacity: 0.9;
+}
+
+@media (min-width: 1000px) {
+	.menu-trigger {
+        display:none;
+    }
+	nav {
+        display:block !important;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 150px;
+    }
+	nav ul {
+        list-style:none;
+        padding-left: -10px;
+    }
+	nav ul li {
+        display: inline;
+        white-space: nowrap;
+        margin: 0 25px 0 25px;
+    }
+	nav ul li a {
+        /* display:block; */
+        list-style-type: none;
+        text-decoration: none; 
+        color: rgb(124, 78, 18);
+        font-size: 26px;
+        font-weight: bold;
+    }
+	nav ul li a:hover{
+        border-bottom: 2px solid rgb(151, 106, 47);
+        color: rgb(124, 78, 18);
+    }
+}
+
+@media (max-width: 1000px) {
+	.menu-trigger {
+        display:block;
+    }
+	nav {
+        display:none;
+    }
+	nav ul {
+        list-style:none;
+        padding-left: 0rem;
+    }
+	nav ul li {
+        margin-bottom:1px;
+    }
+	nav ul li a {
+        display: block;
+        font-size: 14px;
+        text-decoration: none;
+        color:rgb(252, 252, 252);
+        background:#333;
+        padding: 12px 20px;
+    }
+	nav ul li a:hover {
+        background:#212121;
+        color:#FFF;
+    }
+}
+
+.dcs-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dcs-gallery {
+    background-color: aquamarine;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(124, 78, 18);
+}
+
+footer a:hover {
+    color: rgb(124, 78, 18);
+}
+
+/* .first a {
+    font-weight: bold; 
+    text-decoration: none; 
+    color: green;
+    list-style-type: none;
+} */
+
