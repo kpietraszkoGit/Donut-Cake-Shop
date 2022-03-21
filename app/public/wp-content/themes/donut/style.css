@@ -73,7 +73,7 @@ ul li {
 	nav {
         display:block !important;
         text-align: center;
-        vertical-align: middle;
+        /* vertical-align: middle; */
         line-height: 150px;
     }
 	nav ul {
