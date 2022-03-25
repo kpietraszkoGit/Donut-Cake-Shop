@@ -15,40 +15,8 @@
                 $('nav').slideToggle();
             });
         });
-    </script>
-    <script>
+
         var toggle = document.getElementsByClassName('wp-block-image');
-
-        // function switchText() {
-        //     let text = document.getElementsByTagName('figcaption');
-        //     console.log('text', text);
-        //     console.log('text.length', text.length);
-        //     for (var j = 0 ; j < text.length; j++) {
-        //         text[j].classList.add("wp-block-image-notShow");
-        //         console.log('text[0].class: ', text[j].class);
-        //         text[j].class = (text[j].class == "wp-block-image-notShow") ? "wp-block-image-show" : "wp-block-image-notShow";
-        //         if(text[j].class == "wp-block-image-notShow"){
-        //             text[j].classList.add("wp-block-image-show");
-        //             text[j].classList.remove("wp-block-image-notShow");
-        //         } else {
-        //             text[j].classList.add("wp-block-image-notShow");
-        //             text[j].classList.remove("wp-block-image-show");
-        //         }
-        //     }
-        // }
-
-        // for (var i = 0 ; i < toggle.length; i++) {
-        //     toggle[i].setAttribute("id", "photo-"+i);
-        //     var photoID = document.getElementById("photo-"+i);
-        //     // console.log('photoID: ', photoID);
-        //     // photoID.addEventListener('click' , switchText(i) , false ); 
-        //     photoID.addEventListener("click", function(){
-        //         switchText(i);
-        //     }, false);
-        //     // toggle[i].addEventListener('click' , switchText , false ); 
-        //     // console.log('toggle[i]: ', toggle[i]);
-        // }
-
 
         for (var i = 0 ; i < toggle.length; i++) {
             toggle[i].setAttribute("id", "photo-"+i);
@@ -57,9 +25,7 @@
             });
         }
 
-
         function switchText(photoID) {
-            // console.log('zdjecia id:', photoID);
             let text = document.getElementsByTagName('figcaption');
             for (var j = 0 ; j < text.length; j++) {
                 text[j].setAttribute("id", "ID"+j);
@@ -76,7 +42,6 @@
                 }
             }
         }
-        
     </script>
 
     <?php wp_footer() ?>
